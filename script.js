@@ -250,46 +250,84 @@ btnSort.addEventListener('click', function (e) {
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
-// LECTURES
-console.log(23 === 23.0);
-console.log(0.1 + 0.2);
+// // LECTURES
+// console.log(23 === 23.0);
+// console.log(0.1 + 0.2);
 
-console.log(Number('23'));
-console.log(+'23');
-console.log(Number.parseInt('30px', 10));
-console.log(Number.parseInt('e23', 10));
-console.log(Number.parseFloat('2.5rem'));
-console.log(Number.parseInt('2.5rem'));
-console.log(Number.isNaN(20));
-console.log(Number.isNaN('20'));
-console.log(Number.isNaN(+'20X'));
-console.log(Number.isNaN(23 / 0));
-console.log(Number.isFinite(20));
-console.log(Math.sqrt(25));
-console.log(Math.max(1, 3, 4, 5));
-console.log(Math.max(1, 3, '34', 5));
-console.log(Math.max(1, 3, '23px', 5));
-console.log(Math.min(1, 3, 4, 5));
-console.log(Math.min(1, 3, '34', 5));
-console.log(Math.min(1, 3, '23px', 5));
-console.log(Math.round(23.4));
-console.log(Math.round(23.6));
+// console.log(Number('23'));
+// console.log(+'23');
+// console.log(Number.parseInt('30px', 10));
+// console.log(Number.parseInt('e23', 10));
+// console.log(Number.parseFloat('2.5rem'));
+// console.log(Number.parseInt('2.5rem'));
+// console.log(Number.isNaN(20));
+// console.log(Number.isNaN('20'));
+// console.log(Number.isNaN(+'20X'));
+// console.log(Number.isNaN(23 / 0));
+// console.log(Number.isFinite(20));
+// console.log(Math.sqrt(25));
+// console.log(Math.max(1, 3, 4, 5));
+// console.log(Math.max(1, 3, '34', 5));
+// console.log(Math.max(1, 3, '23px', 5));
+// console.log(Math.min(1, 3, 4, 5));
+// console.log(Math.min(1, 3, '34', 5));
+// console.log(Math.min(1, 3, '23px', 5));
+// console.log(Math.round(23.4));
+// console.log(Math.round(23.6));
 
-console.log(Math.floor(23.4));
-console.log(Math.floor(23.6));
+// console.log(Math.floor(23.4));
+// console.log(Math.floor(23.6));
 
-console.log(5 % 2);
-console.log(5 / 2);
-console.log(8 % 3);
+// console.log(5 % 2);
+// console.log(5 / 2);
+// console.log(8 % 3);
 
-const isEven = n => n % 2 === 0;
-console.log(isEven(8));
-console.log(isEven(23));
-console.log(isEven(41312));
+// const isEven = n => n % 2 === 0;
+// console.log(isEven(8));
+// console.log(isEven(23));
+// console.log(isEven(41312));
 
-labelBalance.addEventListener('click', function () {
-  [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
-    if (i % 2 === 0) row.style.backgroundColor = 'orangered';
-    if (i % 3 === 0) row.style.backgroundColor = 'blue';
-  });
-});
+// labelBalance.addEventListener('click', function () {
+//   [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
+//     if (i % 2 === 0) row.style.backgroundColor = 'orangered';
+//     if (i % 3 === 0) row.style.backgroundColor = 'blue';
+//   });
+// });
+
+// const diameter = 898323546232;
+// console.log(diameter);
+// const priceCents = 345_99;
+// console.log(priceCents);
+
+// const transferFee1 = 15_00;
+// const transferFee2 = 1_500;
+
+// const PI = 3.14_15;
+// console.log(PI);
+
+// console.log(Number('230_000'));
+// console.log(2 ** 53 - 1);
+
+const now = new Date();
+console.log(now);
+console.log(new Date('Feb 02 2022 21:00:22'));
+console.log(new Date('December 02 2022'));
+console.log(new Date(account1.movementsDates[0]));
+console.log(new Date(2037, 10, 333));
+
+console.log(new Date(0));
+console.log(new Date(3 * 24 * 60 * 60 * 1000));
+
+const date = new Date(0);
+console.log(typeof date);
+
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future);
+console.log(future.getFullYear());
+console.log(future.getMonth());
+console.log(future.getDate());
+console.log(future.getDay());
+console.log(future.getHours());
+console.log(future.getMinutes());
+console.log(future.getSeconds());
+console.log(future.toISOString());
